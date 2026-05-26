@@ -30,6 +30,7 @@ The ML layer accelerates candidate search; the physics engine remains the ground
 - [Author](#author)
 - [License](#license)
 
+
 ---
 
 ## Problem Statement
@@ -354,24 +355,25 @@ Benchmark run on a **20 km × 20 km** site with **30 turbines**, seed `42`.
 
 | File | Description |
 |------|-------------|
+| `outputs/portfolio_ml_optimization.png` | Combined ML + optimization summary figure |
+| `outputs/benchmark_results.csv` | Full benchmark metrics |
 | `outputs/initial_layout.png` | Random turbine placement on wind heatmap |
 | `outputs/optimized_layout.png` | Optimized layout after hybrid search |
 | `outputs/convergence.png` | AEP convergence over iterations |
 | `outputs/benchmark_comparison.png` | AEP and runtime by solver |
 | `outputs/surrogate_validation.png` | Predicted vs true AEP scatter plot |
-| `outputs/benchmark_results.csv` | Full benchmark metrics |
 
-### Visualizations
+Regenerate the portfolio figure after running the pipeline:
 
-![Initial Layout](outputs/initial_layout.png)
+```bash
+python3 scripts/make_portfolio_figure.py
+```
 
-![Optimized Layout](outputs/optimized_layout.png)
+### Results overview
 
-![Benchmark Comparison](outputs/benchmark_comparison.png)
+![Hybrid Physics–ML Wind Farm Layout Optimization](outputs/portfolio_ml_optimization.png)
 
-![Surrogate Validation](outputs/surrogate_validation.png)
-
-![Convergence Plot](outputs/convergence.png)
+Surrogate validation (top left), solver benchmark (top right), and before/after layout comparison (bottom).
 
 ---
 
