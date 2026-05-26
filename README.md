@@ -81,9 +81,9 @@ wind_speed_map.csv   # input wind resource grid
 
 **Muskan Suman**
 
-**LinkedIn:**  
-**Email:**  
-**Contact:**
+**LinkedIn:** [linkedin.com/in/muskansuman29](https://www.linkedin.com/in/muskansuman29/)  
+**Email:** muskan.suman2907@gmail.com  
+**Contact:** 6265905745
 
 ---
 
