@@ -1,0 +1,2 @@
+[console_scripts]
+wind-farm-opt = wind_farm_opt.cli:main

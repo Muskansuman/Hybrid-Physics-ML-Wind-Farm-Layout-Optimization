@@ -1,0 +1,33 @@
+site:
+  size_km: 20.0
+  wind_map_path: wind_speed_map.csv
+
+turbine:
+  count: 30
+  rotor_diameter_m: 80
+  min_spacing_factor: 5.0
+
+wind:
+  directions_deg: [0, 90, 180, 270]
+  probabilities: [0.4, 0.15, 0.3, 0.15]
+
+optimization:
+  penalty_coefficient: 2000
+  gradient_descent:
+    max_iter: 200
+    learning_rate: 0.1
+  multistart:
+    n_starts: 5
+  hybrid:
+    n_candidates: 500
+    top_k: 5
+    refine_solver: slsqp
+
+surrogate:
+  n_samples: 800
+  test_size: 0.2
+  random_state: 42
+
+benchmark:
+  seed: 42
+  output_dir: outputs
