@@ -1,6 +1,5 @@
 # Hybrid Physics–ML Wind Farm Layout Optimization
 
-**Author:** Muskan Suman  
 **Repository:** [github.com/Muskansuman/new_project](https://github.com/Muskansuman/new_project)
 
 Optimizes wind turbine placement on a 20 km × 20 km site to **maximize Annual Energy Production (AEP)** under wake effects, spacing, and boundary constraints.
@@ -30,7 +29,21 @@ Benchmark: **30 turbines**, **20×20 wind map**, seed `42`.
 
 **XGBoost surrogate:** R² = 0.90 · RMSE = 3.11 MW · MAE = 2.27 MW (800 training layouts)
 
-**Outputs:** `outputs/optimized_layout.png` · `outputs/benchmark_comparison.png` · `outputs/surrogate_validation.png`
+### Initial vs Optimized Layout
+
+![Initial Layout](outputs/initial_layout.png)
+
+![Optimized Layout](outputs/optimized_layout.png)
+
+### Benchmark & Surrogate Validation
+
+![Benchmark Comparison](outputs/benchmark_comparison.png)
+
+![Surrogate Validation](outputs/surrogate_validation.png)
+
+### Convergence
+
+![Convergence Plot](outputs/convergence.png)
 
 ---
 
@@ -61,6 +74,16 @@ tests/               # unit tests
 outputs/             # plots and benchmark results
 wind_speed_map.csv   # input wind resource grid
 ```
+
+---
+
+## Author
+
+**Muskan Suman**
+
+**LinkedIn:**  
+**Email:**  
+**Contact:**
 
 ---
 
